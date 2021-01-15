@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/type-annotation-spacing */
+/* eslint-disable prettier/prettier */
 let todoItems: object[];
 
 // api
@@ -30,11 +32,11 @@ function completeTodo(index:number, todo:object):void {
 }
 
 // business logic
-function logFirstTodo() {
+function logFirstTodo(): object {
   return todoItems[0];
 }
 
-function showCompleted() {
+function showCompleted():object[] {
   return todoItems.filter(item => item.done);
 }
 
@@ -44,7 +46,7 @@ function addTwoTodoItems() {
 }
 
 // NOTE: 유틸 함수
-function log() {
+function log():void {
   console.log(todoItems);
 }
 
