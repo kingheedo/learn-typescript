@@ -24,7 +24,22 @@ interface SumFunction {
     (a: number, b:number): number;
 }
 var sum: SumFunction;
-sum = function(a:number, b:number):number{
+sum = function(a, b){
 return a+b;
 
 }
+sum(1,3)
+
+//인덱싱
+interface StringArray {
+    [index:number]:string;
+}
+var arr:StringArray = ['a','b','c'];
+// arr[0] =10;
+
+//딕셔너리 패턴
+interface StringRegexDictionary{
+    [key:string] :RegExp;
+}
+
+
