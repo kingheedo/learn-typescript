@@ -29,5 +29,17 @@ function askSomeone(someone:Developer | Person){
     //someone에 대해서 유니온타입을 적용했을때 에러 발생 
     someone.name
     someone.age
+    someone.skill
     
 }
+function askSomeone(someone:Developer & Person){
+    someone.name
+    someone.age
+    someone.skill
+    
+}
+
+var seho: string | number | boolean;
+var capt: string & number & boolean;
+
+
