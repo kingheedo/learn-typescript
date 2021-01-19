@@ -1,3 +1,13 @@
+function Person(name, age){
+    this.name= name;
+    this.age= age;
+}
+var capt = new Person ('capt', 15);
+
+// 위에 있는 코드와 아래에 있는 코드는 같다. 
+// 위에 있는 코드도 생성자함수로 es6이전에 구현이 가능했다.
+// 자바스크립트 개발자 혹은 객제지향언어에 익숙해진 사람들이 class기반으로 동작하게 만들었고 
+// 기존의 prototype 상속은 기존과 동일하다.
 class Person {
     // 클래스 로직
     constructor(name, age) {
@@ -9,6 +19,8 @@ class Person {
 var seho = new Person('세호', 30); //생성 되었습니다.
 console.log(seho)
 
+
+//브라우저에서 확인
 
 var user ={name: 'capt',age: 100};
 var admin = {name: 'capt', age: 100, role: 'role'};
